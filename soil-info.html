@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Soil Hub - Sort & Soil</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body class="page-soil">
+<nav class="main-nav">
+    <a href="index.html" class="nav-logo font-display page-transition-link">s&s</a>
+    
+    <div class="nav-links">
+        <a href="sort-info.html" class="nav-item page-transition-link">Sort</a>
+        <a href="soil-info.html" class="nav-item page-transition-link">Soil</a>
+        <a href="about.html" class="nav-item page-transition-link">About</a>
+        <a href="project-root.html" class="nav-cta page-transition-link">Join Project R.O.O.T. 🌳</a>
+    </div>
+
+    <div class="nav-burger" id="nav-burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+<div class="mobile-nav-menu" id="mobile-nav-menu">
+    <a href="sort-info.html" class="nav-item page-transition-link">Sort</a>
+    <a href="soil-info.html" class="nav-item page-transition-link">Soil</a>
+    <a href="about.html" class="nav-item page-transition-link">About</a>
+    <a href="project-root.html" class="nav-cta page-transition-link">Join Project R.O.O.T. 🌳</a>
+</div>
+    
+    <main class="page-wrapper">
+        <section class="hero-scene" style="background-image: linear-gradient(135deg, rgba(47, 107, 47, 0.8), rgba(47, 107, 47, 0.4)), url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=2940&auto=format&fit=crop');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title font-display" style="color: var(--light-text);">Soil</h1>
+                <p class="hero-subtitle">Where endings become beginnings.</p>
+                <button class="cta-button" onclick="document.querySelector('#content').scrollIntoView({behavior: 'smooth'})">Uncover the Mystery</button>
+            </div>
+        </section>
+
+        <section class="content-section bg-light" id="content">
+            <div class="content-container">
+                
+                <div class="content-block text-center" style="margin-bottom: 4rem;">
+                    <h2 class="font-display stats-title" style="color: var(--compost-green);">The Living Universe</h2>
+                    <p class="text-xl">Soil is not dirt. It is a living, breathing ecosystem—a universe in a handful of earth. Composting is our way of giving back, of participating in the timeless cycle of decay and rebirth.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="mini-stat">
+                        <div class="mini-stat-visual">🦠</div>
+                        <div class="mini-stat-number">1B</div>
+                        <div class="mini-stat-label">microorganisms in 1g of soil</div>
+                    </div>
+                    <div class="mini-stat">
+                        <div class="mini-stat-visual">⏰</div>
+                        <div class="mini-stat-number">500</div>
+                        <div class="mini-stat-label">years to create 2cm of soil</div>
+                    </div>
+                    <div class="mini-stat">
+                        <div class="mini-stat-visual">🌱</div>
+                        <div class="mini-stat-number">75%</div>
+                        <div class="mini-stat-label">of global carbon stored in soil</div>
+                    </div>
+                </div>
+
+                <div class="content-block text-center" style="margin-top: 6rem; margin-bottom: 4rem;">
+                    <h2 class="font-display stats-title" style="color: var(--compost-green);">The Alchemy of Decomposition</h2>
+                    <p class="text-xl">Composting is nature's recycling program—a precise dance of carbon, nitrogen, oxygen, and water. Understanding this balance transforms kitchen scraps into black gold.</p>
+                </div>
+
+                <div class="two-column-layout">
+                    <div class="column">
+                        <img src="https://images.unsplash.com/photo-1476519110428-518a2d75f841?q=80&w=800&auto=format&fit=crop" alt="Autumn leaves">
+                    </div>
+                    <div class="column">
+                        <h3 class="font-display">Carbon (Browns)</h3>
+                        <p>Dry leaves, paper, cardboard—the energy source that feeds the decomposition process and provides structure. Browns are the slow-burning fuel for your compost pile.</p>
+                    </div>
+                </div>
+                <div class="two-column-layout">
+                    <div class="column">
+                        <h3 class="font-display">Nitrogen (Greens)</h3>
+                        <p>Fresh kitchen scraps, grass clippings—the protein that builds microbial communities and activates decomposition. Greens are the fast-acting ingredients that get your compost cooking.</p>
+                    </div>
+                    <div class="column">
+                        <img src="https://images.unsplash.com/photo-1543282253-2707a8575432?q=80&w=800&auto=format&fit=crop" alt="Apple core">
+                    </div>
+                </div>
+                <div class="compost-ratio" style="margin-top: 3rem;">
+                    <h3 class="font-display" style="color: var(--dark-text); text-align: center; margin-bottom: 2rem;">The Golden Ratio</h3>
+                    <div class="ratio-visual">
+                        <div class="ratio-part browns"><div class="ratio-number">3</div><div class="ratio-label">parts carbon (browns)</div></div>
+                        <div class="ratio-symbol" style="color: var(--dark-text);">:</div>
+                        <div class="ratio-part greens"><div class="ratio-number">1</div><div class="ratio-label">part nitrogen (greens)</div></div>
+                    </div>
+                </div>
+
+                <div class="content-block text-center" style="margin-top: 6rem; margin-bottom: 4rem;">
+                    <h2 class="font-display stats-title" style="color: var(--compost-green);">Mastering the Craft</h2>
+                    <p class="text-xl">Every compost pile tells a story—learn to read the signs, adjust the balance, and nurture the process from scraps to soil.</p>
+                </div>
+
+                <div class="card-grid three-cols">
+                    <div class="info-page-card">
+                        <div class="card-icon" style="color: var(--waste-orange);">🌡️</div>
+                        <h3 class="font-display">Thermophilic Phase</h3>
+                        <p>High temperatures (55-70°C) kill pathogens and weed seeds as bacteria break down easily decomposable materials. The pile will be hot to the touch and may even steam.</p>
+                    </div>
+                    <div class="info-page-card">
+                        <div class="card-icon" style="color: var(--compost-green);">🍄</div>
+                        <h3 class="font-display">Mesophilic Phase</h3>
+                        <p>Fungi take over, breaking down cellulose and lignin. The pile cools (20-40°C) as structure develops. You may see worms and fungi at this stage.</p>
+                    </div>
+                    <div class="info-page-card">
+                        <div class="card-icon" style="color: var(--dark-text);">🖤</div>
+                        <h3 class="font-display">Maturation Phase</h3>
+                        <p>Final stabilization creates humus-rich, stable compost ready to nourish new growth. The compost will be dark, crumbly, and have a sweet, earthy smell.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box soil" style="margin-top: 4rem;">
+                    <h2 class="font-display stats-title" style="color: var(--compost-green);">Balance the Bin</h2>
+                    <p class="text-xl">Ready to get your hands dirty? Play our compost balancing game and learn the recipe for perfect soil.</p>
+                    <a href="soil.html" class="cta-button page-transition-link" style="background: var(--compost-green);">Play the Game</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="info-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="modal-title" class="font-display"></h2>
+            <p id="modal-info"></p>
+            <div class="modal-source">
+                <strong>Source:</strong> <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <button id="modal-close-btn" class="cta-button">close</button>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo font-display">Sort & Soil</div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="sort-info.html" class="footer-link">Sort</a>
+                <a href="soil-info.html" class="footer-link">Soil</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="project-root.html" class="footer-link"><b>Project R.O.O.T.</b></a>
+            </div>
+            <div class="footer-social">
+                <p>A student initiative at the <a href="https://www.reading.ac.uk/" target="_blank" rel="noopener noreferrer">University of Reading</a>.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">i</a>
+                    <a href="#" class="social-icon">t</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

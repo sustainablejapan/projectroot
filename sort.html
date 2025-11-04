@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binder - Sort & Soil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body class="page-sort">
+<nav class="main-nav">
+    <a href="index.html" class="nav-logo font-display page-transition-link">s&s</a>
+    
+    <div class="nav-links">
+        <a href="sort-info.html" class="nav-item page-transition-link">Sort</a>
+        <a href="soil-info.html" class="nav-item page-transition-link">Soil</a>
+        <a href="about.html" class="nav-item page-transition-link">About</a>
+        <a href="project-root.html" class="nav-cta page-transition-link">Join Project R.O.O.T. 🌳</a>
+    </div>
+
+    <div class="nav-burger" id="nav-burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+<div class="mobile-nav-menu" id="mobile-nav-menu">
+    <a href="sort-info.html" class="nav-item page-transition-link">Sort</a>
+    <a href="soil-info.html" class="nav-item page-transition-link">Soil</a>
+    <a href="about.html" class="nav-item page-transition-link">About</a>
+    <a href="project-root.html" class="nav-cta page-transition-link">Join Project R.O.O.T. 🌳</a>
+</div>
+
+    <div class="page-wrapper">
+        <div id="game-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize sorting game when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initSortingGame();
+        });
+    </script>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo font-display">Sort & Soil</div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="sort-info.html" class="footer-link">Sort</a>
+                <a href="soil-info.html" class="footer-link">Soil</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="project-root.html" class="footer-link"><b>Project R.O.O.T.</b></a>
+            </div>
+            <div class="footer-social">
+                <p>A student initiative at the <a href="https://www.reading.ac.uk/" target="_blank" rel="noopener noreferrer">University of Reading</a>.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">i</a>
+                    <a href="#" class="social-icon">t</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

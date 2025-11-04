@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort & Soil - Join Project R.O.O.T.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body class="page-home">
+
+    <main>
+        <section class="hero" id="hero">
+            <video class="hero-video" autoplay loop muted playsinline>
+                <source src="images/herovideo.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+               <h1 id="hero-title" class="hero-title font-display">Your trash has a future.</h1>
+                <p id="hero-subtitle" class="hero-subtitle">You decide what it is.</p>
+            </div>
+            <div class="scroll-arrow" id="scroll-arrow">↓</div>
+        </section>
+
+        <section class="content-section bg-light" id="stats">
+            <div class="content-container text-center">
+                <h2 class="stats-title font-display">It Starts With <u style="text-decoration-color: inherit;">You</u>.</h2>
+                <div class="waste-stats">
+                    <div class="stat" 
+                         data-title="UK Annual Waste" 
+                         data-info="The UK generates a significant amount of waste from all sources, including households, commercial, and industrial. This figure represents the scale of the challenge we face."
+                         data-source="DEFRA UK Statistics on Waste, March 2023"
+                         data-link="https://www.gov.uk/government/statistics/uk-statistics-on-waste">
+                        <div class="stat-visual">
+                            <div class="waste-pile">
+                                <div class="pile-segment" style="height: 0%;" data-height="90%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-header">
+                            <span class="stat-number waste" data-target="222">0</span>
+                            <span class="stat-unit">Million Tonnes</span>
+                        </div>
+                        <span class="stat-label">uk annual waste</span>
+                    </div>
+                    <div class="stat"
+                         data-title="Household Recycling Rate"
+                         data-info="This is the percentage of UK household waste that is sent for recycling. While it has increased over the years, there is still significant room for improvement through better sorting and reduced contamination."
+                         data-source="DEFRA, Env23-01, April 2024"
+                         data-link="https://www.gov.uk/government/statistics/uk-waste-and-recycling-statistics">
+                        <div class="stat-visual">
+                            <div class="bar-graph">
+                                <div class="bar-fill recycle" style="width: 0%;" data-width="44.6%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-header">
+                            <span class="stat-number recycle" data-target="44.6">0</span>
+                            <span class="stat-unit">%</span>
+                        </div>
+                        <span class="stat-label">household recycling rate</span>
+                    </div>
+                    <div class="stat"
+                         data-title="Untapped Potential"
+                         data-info="Studies show that a vast majority of the materials found in general waste bins could have been recycled or composted. This highlights the critical importance of making the right choice for every item."
+                         data-source="WRAP - Composition of municipal waste in the UK, 2017"
+                         data-link="https://wrap.org.uk/resources/report/composition-municipal-waste-uk">
+                        <div class="stat-visual">
+                            <div class="donut-chart" data-percent="80">
+                                <svg viewBox="0 0 36 36">
+                                    <path class="donut-ring" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="donut-segment compost" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="stat-header">
+                            <span class="stat-number compost" data-target="80">0</span>
+                            <span class="stat-unit">%</span>
+                        </div>
+                        <span class="stat-label">potentially recyclable</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section bg-white">
+            <div class="home-topic-grid">
+                <div class="topic-card sort">
+                    <div class="topic-card-header">
+                        <h2 class="font-display">Sort</h2>
+                    </div>
+                    <p>One wrong item can spoil a whole batch. Learn the rules, beat the "contamination crisis," and master the system.</p>
+                    <div class="topic-card-buttons">
+                        <a href="sort-info.html" class="cta-button info page-transition-link">Learn</a>
+                        <a href="sort.html" class="cta-button play page-transition-link">Play</a>
+                    </div>
+                </div>
+                <div class="topic-card soil">
+                    <div class="topic-card-header">
+                        <h2 class="font-display">Soil</h2>
+                    </div>
+                    <p>Turn your scraps into "black gold." Learn the simple science of composting and how to balance your bin perfectly.</p>
+                    <div class="topic-card-buttons">
+                        <a href="soil-info.html" class="cta-button info page-transition-link">Learn</a>
+                        <a href="soil.html" class="cta-button play page-transition-link">Play</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section bg-light" id="project-root-cta-section">
+            <div class="project-root-cta">
+                <div class="cta-content">
+                    <span class="cta-subtitle font-display">take the next step</span>
+                    <h2 class="font-display">Help Build Project R.O.O.T.</h2>
+                    <p>You've learned the 'why'. Now, help us find the 'how'. We're designing a new student-led composting initiative at the University of Reading, and we need your input.</p>
+                    <p>Be part of the pilot program to test a new way of handling food waste, gain green skills, and help us divert tonnes of waste from landfill.</p>
+                    <a href="project-root.html" class="cta-button page-transition-link">Join the Pilot →</a>
+                </div>
+                <div class="cta-image">
+                    <img src="https://images.unsplash.com/photo-1582485323440-7543f702b5c3?q=80&w=800&auto=format&fit=crop" alt="People working together in a community garden">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <div id="info-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="modal-title" class="font-display"></h2>
+            <p id="modal-info"></p>
+            <div class="modal-source">
+                <strong>Source:</strong> <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <button id="modal-close-btn" class="cta-button">Close</button>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo font-display">Sort & Soil</div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="sort-info.html" class="footer-link">Sort</a>
+                <a href="soil-info.html" class="footer-link">Soil</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="project-root.html" class="footer-link"><b>Project R.O.O.T.</b></a>
+            </div>
+            <div class="footer-social">
+                <p>A student initiative at the <a href="https://www.reading.ac.uk/" target="_blank" rel="noopener noreferrer">University of Reading</a>.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">i</a>
+                    <a href="#" class="social-icon">t</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

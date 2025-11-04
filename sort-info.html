@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sort Zone - Sort & Soil</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body class="page-sort">
+<nav class="main-nav">
+    <a href="index.html" class="nav-logo font-display page-transition-link">s&s</a>
+    
+    <div class="nav-links">
+        <a href="sort-info.html" class="nav-item page-transition-link">Sort</a>
+        <a href="soil-info.html" class="nav-item page-transition-link">Soil</a>
+        <a href="about.html" class="nav-item page-transition-link">About</a>
+        <a href="project-root.html" class="nav-cta page-transition-link">Join Project R.O.O.T. 🌳</a>
+    </div>
+
+    <div class="nav-burger" id="nav-burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+<div class="mobile-nav-menu" id="mobile-nav-menu">
+    <a href="sort-info.html" class="nav-item page-transition-link">Sort</a>
+    <a href="soil-info.html" class="nav-item page-transition-link">Soil</a>
+    <a href="about.html" class="nav-item page-transition-link">About</a>
+    <a href="project-root.html" class="nav-cta page-transition-link">Join Project R.O.O.T. 🌳</a>
+</div>
+
+    <main class="page-wrapper">
+        <section class="hero-scene" style="background-image: linear-gradient(135deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.4)), url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=2940&auto=format&fit=crop');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title font-display" style="color: var(--light-text);">Sort</h1>
+                <p class="hero-subtitle">Every choice echoes through the system.</p>
+                <button class="cta-button" onclick="document.querySelector('#content').scrollIntoView({behavior: 'smooth'})">Explore the System</button>
+            </div>
+        </section>
+
+        <section class="content-section bg-light" id="content">
+            <div class="content-container">
+                
+                <div class="content-block text-center" style="margin-bottom: 4rem;">
+                    <h2 class="font-display stats-title" style="color: var(--recycle-blue);">The Contamination Crisis</h2>
+                    <p class="text-xl">One wrong item can spoil an entire batch of recycling. This 'contamination' sends thousands of tonnes of good material to landfill every year. Putting the right thing in the right bin is a powerful choice.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="mini-stat">
+                        <div class="mini-stat-visual">
+                            <div class="contamination-bar"><div class="contamination-fill" style="width: 25%;"></div></div>
+                        </div>
+                        <div class="mini-stat-number">25%</div>
+                        <div class="mini-stat-label">recycling contamination rate</div>
+                    </div>
+                    <div class="mini-stat">
+                        <div class="mini-stat-visual">🗑️</div>
+                        <div class="mini-stat-number">500k</div>
+                        <div class="mini-stat-label">tonnes lost to contamination</div>
+                    </div>
+                    <div class="mini-stat">
+                        <div class="mini-stat-visual">💰</div>
+                        <div class="mini-stat-number">£50m</div>
+                        <div class="mini-stat-label">economic cost of contamination</div>
+                    </div>
+                </div>
+
+                <div class="content-block text-center" style="margin-top: 6rem; margin-bottom: 4rem;">
+                    <h2 class="font-display stats-title" style="color: var(--recycle-blue);">The 3 R's: A Foundation</h2>
+                    <p class="text-xl">Before sorting, the waste hierarchy guides us:</p>
+                </div>
+
+                <div class="two-column-layout">
+                    <div class="column">
+                        <img src="https://images.unsplash.com/photo-1591193692083-465d3a5ca528?q=80&w=800&auto=format&fit=crop" alt="Refillable bottles and containers">
+                    </div>
+                    <div class="column">
+                        <h3 class="font-display">Reduce</h3>
+                        <p>The most effective step. Choose products with minimal packaging and opt for durable goods over disposable ones. Think unpackaged fruits and vegetables, refillable containers, and buying in bulk.</p>
+                    </div>
+                </div>
+                <div class="two-column-layout">
+                    <div class="column">
+                        <h3 class="font-display">Reuse</h3>
+                        <p>Before discarding, consider if an item can be used again. Glass jars become storage, old t-shirts become cleaning rags, and furniture can be repaired or upcycled. A little creativity can give an item a whole new life.</p>
+                    </div>
+                    <div class="column">
+                        <img src="https://images.unsplash.com/photo-1588282322673-c31965a75c3e?q=80&w=800&auto=format&fit=crop" alt="Person holding a reusable coffee cup">
+                    </div>
+                </div>
+                <div class="two-column-layout">
+                    <div class="column">
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=800&auto=format&fit=crop" alt="Colorful recycling bins">
+                    </div>
+                    <div class="column">
+                        <h3 class="font-display">Recycle</h3>
+                        <p>The final step. This transforms materials into new products, but only when done correctly—contamination breaks the chain. Clean and dry materials are key to a successful recycling process.</p>
+                    </div>
+                </div>
+
+                <div class="content-block text-center" style="margin-top: 6rem; margin-bottom: 4rem;">
+                    <h2 class="font-display stats-title" style="color: var(--recycle-blue);">What Goes Where?</h2>
+                    <p class="text-xl">Knowing *why* materials can't mix transforms you from someone who sorts to someone who understands the system.</p>
+                </div>
+
+                <div class="what-goes-where">
+                    <div class="bin-section recycle-bin">
+                        <h3 class="font-display">Recycling Bin</h3>
+                        <ul class="item-list yes-list">
+                            <li><span class="icon">✅</span>Clean paper & cardboard</li>
+                            <li><span class="icon">✅</span>Plastic bottles & containers (empty and rinsed)</li>
+                            <li><span class="icon">✅</span>Glass bottles & jars (empty and rinsed)</li>
+                            <li><span class="icon">✅</span>Metal cans & foil (clean)</li>
+                        </ul>
+                    </div>
+                    <div class="bin-section landfill-bin">
+                        <h3 class="font-display">General Waste</h3>
+                        <ul class="item-list no-list">
+                            <li><span class="icon">❌</span>Food-soiled containers</li>
+                            <li><span class="icon">❌</span>Plastic bags & film</li>
+                            <li><span class="icon">❌</span>Broken glass</li>
+                            <li><span class="icon">❌</span>Coffee cups</li>
+                            <li><span class="icon">❌</span>Polystyrene</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="highlight-box sort" style="margin-top: 4rem;">
+                    <h2 class="font-display stats-title" style="color: var(--recycle-blue);">Ready to Test Your Skills?</h2>
+                    <p class="text-xl">Think you know what goes where? Play our interactive sorting game and see how you stack up against the contamination crisis.</p>
+                    <a href="sort.html" class="cta-button page-transition-link">Play the Game</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="info-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="modal-title" class="font-display"></h2>
+            <p id="modal-info"></p>
+            <div class="modal-source">
+                <strong>Source:</strong> <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <button id="modal-close-btn" class="cta-button">close</button>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo font-display">Sort & Soil</div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="sort-info.html" class="footer-link">Sort</a>
+                <a href="soil-info.html" class="footer-link">Soil</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="project-root.html" class="footer-link"><b>Project R.O.O.T.</b></a>
+            </div>
+            <div class="footer-social">
+                <p>A student initiative at the <a href="https://www.reading.ac.uk/" target="_blank" rel="noopener noreferrer">University of Reading</a>.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">i</a>
+                    <a href="#" class="social-icon">t</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
