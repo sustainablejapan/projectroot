@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Survey - Sort & Soil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body class="page-root">
+<nav class="main-nav">
+    <a href="index.html" class="nav-logo page-transition-link"><img src="images/logo.png" alt="Sort & Soil Logo" class="nav-logo-img"></a>
+    
+    <div class="nav-links">
+        <a href="sort-info.html" class="nav-item page-transition-link">Sort</a>
+        <a href="soil-info.html" class="nav-item page-transition-link">Soil</a>
+        <a href="about.html" class="nav-item page-transition-link">About</a>
+        <a href="project-root.html" class="nav-cta page-transition-link">Join Project R.O.O.T. 🌳</a>
+    </div>
+
+    <div class="nav-burger" id="nav-burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+<div class="mobile-nav-menu" id="mobile-nav-menu">
+    <a href="sort-info.html" class="nav-item page-transition-link">Sort</a>
+    <a href="soil-info.html" class="nav-item page-transition-link">Soil</a>
+    <a href="about.html" class="nav-item page-transition-link">About</a>
+    <a href="project-root.html" class="nav-cta page-transition-link">Join Project R.O.O.T. 🌳</a>
+</div>
+
+    <main class="page-wrapper">
+        <section class="content-section bg-light" id="content">
+            <div class="content-container">
+                <div class="content-block text-center" style="margin-bottom: 4rem;">
+                    <h1 class="hero-title font-display">Get Paid to Compost!</h1>
+                    <p class="text-xl">Thanks for stopping by! This 2-minute survey will help us get a project funded to pay students for their food waste. Your feedback is crucial. Complete this form to enter our prize draw for a £25 voucher!</p>
+                </div>
+
+                <div class="content-block" id="survey-form-container" style="margin-top: 6rem;">
+                    <form class="signup-form" action="https://formspree.io/f/xldaryvw" method="POST">
+                        
+                        <fieldset>
+                            <legend>Section 1: About You</legend>
+                            <p class="fieldset-description">This helps us know who to target for the pilot.</p>
+                            
+                            <label>What year of study are you in?</label>
+                            <div class="radio-group">
+                                <input type="radio" id="year1" name="year_of_study" value="1st Year Undergraduate" required> <label for="year1">1st Year Undergraduate</label>
+                                <input type="radio" id="year2" name="year_of_study" value="2nd Year Undergraduate"> <label for="year2">2nd Year Undergraduate</label>
+                                <input type="radio" id="year3" name="year_of_study" value="3rd+ Year Undergraduate"> <label for="year3">3rd+ Year Undergraduate</label>
+                                <input type="radio" id="year_pgt" name="year_of_study" value="Taught Postgraduate (Masters)"> <label for="year_pgt">Taught Postgraduate (Masters)</label>
+                                <input type="radio" id="year_pgr" name="year_of_study" value="Research Postgraduate (PhD)"> <label for="year_pgr">Research Postgraduate (PhD)</label>
+                            </div>
+
+                            <label>Where do you currently live?</label>
+                            <div class="radio-group">
+                                <input type="radio" id="residence_halls" name="residence" value="University Halls of Residence" required> <label for="residence_halls">University Halls of Residence</label>
+                                <input type="radio" id="residence_private" name="residence" value="Private Rented Accommodation"> <label for="residence_private">Private Rented Accommodation</label>
+                                <input type="radio" id="residence_home" name="residence" value="At home / Commuting"> <label for="residence_home">At home / Commuting</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Section 2: The Project & The Pay</legend>
+                            <p class="fieldset-description">This is the most important part for our financial model.</p>
+
+                            <div class="info-box">
+                                <p><strong>As a reminder:</strong> The average student produces ~1kg of food waste per week. Our report proposes paying £0.50 per kg.</p>
+                                <ul>
+                                    <li>This means one student could earn ~£17.50 per year.</li>
+                                    <li>A 10-person flat could earn ~£175 for a flat fund.</li>
+                                </ul>
+                            </div>
+
+                            <label>What is the minimum payment per kg that would make you definitely participate?</label>
+                            <div class="radio-group">
+                                <input type="radio" id="payment_free" name="min_payment" value="I'd do it for free" required> <label for="payment_free">I'd do it for free (the free kit and compost are enough)</label>
+                                <input type="radio" id="payment_10p" name="min_payment" value="£0.10 per kg"> <label for="payment_10p">£0.10 per kg (earning ~£3.50/year)</label>
+                                <input type="radio" id="payment_25p" name="min_payment" value="£0.25 per kg"> <label for="payment_25p">£0.25 per kg (earning ~£8.75/year)</label>
+                                <input type="radio" id="payment_50p" name="min_payment" value="£0.50 per kg"> <label for="payment_50p">£0.50 per kg (earning ~£17.50/year)</label>
+                            </div>
+                        </fieldset>
+                        
+                        <button type="submit" class="cta-button">Submit Survey</button>
+                    </form>
+                    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 2rem;">
+                        <h3 class="font-display" style="color: var(--compost-green);">Thank You!</h3>
+                        <p class="text-xl">Your feedback has been received. You've been entered into the prize draw!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </.main>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('.signup-form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Manual validation check
+                    if (!form.checkValidity()) {
+                        // If the form is invalid, trigger the browser's default validation UI
+                        // by temporarily submitting a hidden form or focusing on the first invalid element.
+                        // For now, we'll just alert, but a more sophisticated UI could be built.
+                        alert('Please fill out all required fields.');
+                        return; 
+                    }
+
+                    const thankYouMessage = document.getElementById('thank-you-message');
+                    const formData = new FormData(form);
+                    
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }).then(response => {
+                        if (response.ok) {
+                            form.style.display = 'none';
+                            thankYouMessage.style.display = 'block';
+                        } else {
+                            response.json().then(data => {
+                                if (Object.hasOwn(data, 'errors')) {
+                                    alert(data["errors"].map(error => error["message"]).join(", "));
+                                } else {
+                                    alert('Oops! There was a problem submitting your form');
+                                }
+                            })
+                        }
+                    }).catch(error => {
+                        alert('Oops! There was a problem submitting your form');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
