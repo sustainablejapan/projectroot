@@ -1,8 +1,8 @@
 /* --- ROOT VARIABLES (NEW BOLD/SIMPLE THEME V2) --- */
 :root {
-    --waste-orange: #D95F30;
-    --compost-green: #3A7D3A;
-    --recycle-blue: #3B71CA;
+    --waste-orange: #E67E22;
+    --compost-green: #27AE60;
+    --recycle-blue: #3498DB;
     --light-bg: #F9F9F9;      
     --mid-bg: #FFFFFF;
     --dark-text: #1A1A1A;
@@ -10,6 +10,7 @@
     --light-text: #FFFFFF;
     --border-color: #1A1A1A; /* Strong black borders */
     --nav-height: 84px;
+    --theme-primary-faded: rgba(52, 152, 219, 0.1);
 
     /* Standardized radii */
     --radius-main: 12px;
@@ -22,7 +23,7 @@ body {
     color: var(--dark-text); 
     font-family: 'Inter', sans-serif; 
     overflow-x: hidden; 
-    line-height: 1.6; 
+    line-height: 1.7; 
     opacity: 0; 
     transition: opacity 0.5s ease-in-out; 
     border-top: 5px solid var(--dark-text); /* Site-wide top border */
@@ -61,7 +62,15 @@ body.nav-open {
     border-bottom: 1px solid var(--border-color);
     display: flex; justify-content: space-between; align-items: center;
 }
-.nav-logo { font-size: 28px; font-weight: 800; color: var(--dark-text); text-decoration: none; font-family: 'Inter', sans-serif; text-transform: lowercase; }
+.nav-logo { 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.nav-logo-img {
+    height: 40px;
+    width: auto;
+}
 .nav-links { display: flex; gap: 40px; align-items: center; }
 .nav-item { color: var(--muted-text); text-decoration: none; font-weight: 500; font-size: 15px; transition: color 0.2s ease; }
 .nav-item:hover { color: var(--dark-text); }
@@ -88,7 +97,7 @@ body.nav-open {
 
 .hero { 
     height: 100vh; /* Only hero is 100vh */
-    width: 100vw; 
+    width: 100%; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -150,10 +159,18 @@ body.nav-open {
     width: 100%;
 }
 
+.content-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: var(--radius-main);
+    margin: 3rem 0;
+}
+
 /* --- STATS SECTION --- */
 .waste-stats { 
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 2rem;
     margin-top: 3rem; /* Reduced from 4rem */
 }
@@ -369,6 +386,28 @@ body.nav-open {
     border-left: 6px solid var(--theme-primary);
 }
 
+.highlight-box.soil {
+    border-color: var(--compost-green);
+    background-color: #f0fff4; /* A very light green */
+}
+
+.highlight-box .stats-title {
+    margin-bottom: 1rem;
+}
+
+.highlight-box .text-xl {
+    margin-bottom: 2rem;
+}
+
+.highlight-box .cta-button {
+    box-shadow: 4px 4px 0px var(--compost-green);
+    border-color: var(--compost-green);
+}
+
+.highlight-box .cta-button:hover {
+    box-shadow: 2px 2px 0px var(--compost-green);
+}
+
 /* --- MINI STATS --- */
 .stats-grid {
     display: grid;
@@ -581,7 +620,7 @@ body.nav-open {
     margin: 1rem auto; /* Reduced */
 }
 .card-stack {
-    position: relative; width: 90vw; max-width: 380px;
+    position: relative; width: 100%; max-width: 380px;
     aspect-ratio: 380 / 540;
     margin-bottom: 1.5rem; /* Reduced */
     perspective: 1200px;
@@ -623,7 +662,6 @@ body.nav-open {
 .card-tag { font-size: 0.7rem; padding: 0.4rem 0.8rem; border-radius: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
 .tag-sort { background: var(--theme-primary-faded); color: var(--theme-primary); }
 .tag-soil { background: var(--theme-primary-faded); color: var(--theme-primary); }
-.tag-special { background: rgba(202, 90, 40, 0.1); color: var(--waste-orange); }
 
 .game-controls { display: flex; justify-content: center; gap: 1.5rem; z-index: 1; }
 .control-btn {
@@ -645,10 +683,8 @@ body.nav-open {
     box-shadow: 0px 0px 0px var(--border-color);
 }
 .control-btn.reject { color: var(--waste-orange); }
-.control-btn.super { color: var(--dark-text); }
 .control-btn.accept { color: var(--theme-primary); }
 .control-btn.reject:hover { background: var(--waste-orange); color: var(--light-text); }
-.control-btn.super:hover { background: var(--dark-text); color: var(--light-text); }
 .control-btn.accept:hover { background: var(--theme-primary); color: var(--light-text); }
 .control-btn svg { width: 26px; height: 26px; }
 
@@ -773,6 +809,7 @@ body.nav-open {
     height: 100%;
     object-fit: cover;
     border-radius: var(--radius-main);
+    aspect-ratio: 4 / 3;
 }
 .two-column-layout .column h3 {
     font-size: 2rem;
@@ -836,10 +873,10 @@ body.nav-open .nav-burger div:nth-child(3) {
 
 /* --- Spacing Adjustments --- */
 .content-section {
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
 }
 .content-block {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .stats-grid {
     margin: 4rem 0;
@@ -921,6 +958,77 @@ body.nav-open .nav-burger div:nth-child(3) {
     width: 100%;
     background: var(--compost-green);
 }
+
+/* --- NEW: Survey Form Specific Styles --- */
+.signup-form fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.signup-form legend {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--dark-text);
+    width: 100%;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+.signup-form .fieldset-description {
+    font-size: 1rem;
+    color: var(--muted-text);
+    margin-bottom: 1.5rem;
+}
+.signup-form .info-box {
+    background: var(--light-bg);
+    border: 2px solid var(--border-color);
+    border-left: 5px solid var(--compost-green);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: var(--radius-small);
+}
+.signup-form .info-box p {
+    margin-bottom: 1rem;
+}
+.signup-form .info-box ul {
+    list-style-position: inside;
+    padding-left: 0.5rem;
+}
+.signup-form .info-box li {
+    margin-bottom: 0.5rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+.radio-group label {
+    display: block;
+    background: var(--mid-bg);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-small);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+.radio-group label:hover {
+    background: var(--light-bg);
+    transform: translateY(-2px);
+}
+.radio-group input[type="radio"] {
+    display: none; /* Hide the actual radio button */
+}
+.radio-group input[type="radio"]:checked + label {
+    background: var(--compost-green);
+    color: var(--light-text);
+    border-color: var(--compost-green);
+    box-shadow: 4px 4px 0px var(--dark-text);
+    transform: translate(-2px, -2px);
+}
+
 
 /* --- FOOTER --- */
 .main-footer {
@@ -1086,7 +1194,6 @@ body.nav-open .nav-burger div:nth-child(3) {
     box-shadow: 2px 2px 0px var(--border-color);
 }
 .control-btn.reject.is-active { background: var(--waste-orange); color: var(--light-text); }
-.control-btn.super.is-active { background: var(--dark-text); color: var(--light-text); }
 
 /* --- NEW: Game Feedback Animations --- */
 @keyframes correct-flash-anim {
@@ -1157,41 +1264,6 @@ body.nav-open .nav-burger div:nth-child(2) {
     opacity: 0;
 }
 body.nav-open .nav-burger div:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-
-/* --- NEW: Homepage Floating Burger --- */
-.home-burger-menu {
-    display: flex; /* Use flex instead of none to be able to show it */
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    z-index: 2001; /* Above overlay */
-    position: fixed;
-    top: 32px;
-    right: 32px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: var(--radius-small);
-    backdrop-filter: blur(10px);
-}
-.home-burger-menu div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--dark-text);
-    border-radius: 3px;
-    transition: all 0.3s ease;
-}
-
-/* Burger animation for home-burger-menu */
-body.nav-open .home-burger-menu div:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-body.nav-open .home-burger-menu div:nth-child(2) {
-    opacity: 0;
-}
-body.nav-open .home-burger-menu div:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
 
