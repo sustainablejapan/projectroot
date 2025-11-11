@@ -8,14 +8,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body class="page-home">
+
+<nav class="main-nav">
+    <a href="index.html" class="nav-logo page-transition-link"><img src="images/logo.png" alt="Sort & Soil Logo" class="nav-logo-img"></a>
+    
+    <div class="nav-links">
+        <a href="sort-info.html" class="nav-item page-transition-link">Sort</a>
+        <a href="soil-info.html" class="nav-item page-transition-link">Soil</a>
+        <a href="about.html" class="nav-item page-transition-link">About</a>
+        <a href="project-root.html" class="nav-cta page-transition-link">Join Project R.O.O.T. 🌳</a>
+    </div>
+
+    <div class="nav-burger" id="nav-burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+<div class="mobile-nav-menu" id="mobile-nav-menu">
+    <a href="sort-info.html" class="nav-item page-transition-link">Sort</a>
+    <a href="soil-info.html" class="nav-item page-transition-link">Soil</a>
+    <a href="about.html" class="nav-item page-transition-link">About</a>
+    <a href="project-root.html" class="nav-cta page-transition-link">Join Project R.O.O.T. 🌳</a>
+</div>
 
     <main>
         <section class="hero" id="hero">
             <video class="hero-video" autoplay loop muted playsinline>
-                <source src="images/trash.jpg" type="video/mp4">
+                <source src="https://www.pexels.com/download/video/3174411/" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
             <div class="hero-content">
@@ -31,56 +55,64 @@
                 <div class="waste-stats">
                     <div class="stat" 
                          data-title="UK Annual Waste" 
-                         data-info="The UK generates a significant amount of waste from all sources, including households, commercial, and industrial. This figure represents the scale of the challenge we face."
-                         data-source="DEFRA UK Statistics on Waste, March 2023"
-                         data-link="https://www.gov.uk/government/statistics/uk-waste-data/uk-statistics-on-waste">
+                         data-info="The UK generated 191.2 million tonnes of total waste in 2020. This includes waste from households, commercial and industrial (C&I) activities, and construction, demolition and excavation (CD&E)."
+                         data-source="DEFRA UK Statistics on Waste, 2020"
+                         data-link="https://www.gov.uk/government/statistics/uk-waste-data">
                         <div class="stat-visual">
                             <div class="waste-pile">
-                                <div class="pile-segment" style="height: 0%;" data-height="90%"></div>
+                                <div class="pile-segment" style="height: 0%;" data-height="85%"></div>
                             </div>
                         </div>
                         <div class="stat-header">
-                            <span class="stat-number waste" data-target="222">191.2</span>
+                            <span class="stat-number waste" data-target="191.2">0</span>
                             <span class="stat-unit">Million Tonnes</span>
                         </div>
-                        <span class="stat-label">uk annual waste</span>
+                        <span class="stat-label">uk total waste (2020)</span>
                     </div>
                     <div class="stat"
                          data-title="Household Recycling Rate"
-                         data-info="This is the percentage of UK household waste that is sent for recycling. While it has increased over the years, there is still significant room for improvement through better sorting and reduced contamination."
-                         data-source="DEFRA UK Statistics on Waste, March 2023"
-                         data-link="https://www.gov.uk/government/statistics/uk-waste-data/uk-statistics-on-waste">
+                         data-info="This is the provisional percentage of UK 'waste from households' that was sent for recycling in 2023. While it has increased over the years, there is still significant room for improvement."
+                         data-source="DEFRA, UK statistics on waste, 2023"
+                         data-link="https://www.gov.uk/government/statistics/uk-waste-data">
                         <div class="stat-visual">
                             <div class="bar-graph">
                                 <div class="bar-fill recycle" style="width: 0%;" data-width="44.6%"></div>
                             </div>
                         </div>
                         <div class="stat-header">
-                            <span class="stat-number recycle" data-target="44.6">44.6</span>
+                            <span class="stat-number recycle" data-target="44.6">0</span>
                             <span class="stat-unit">%</span>
                         </div>
-                        <span class="stat-label">household recycling rate</span>
+                        <span class="stat-label">household recycling rate (2023)</span>
                     </div>
                     <div class="stat"
-                         data-title="Untapped Potential"
-                         data-info="Studies show that a vast majority of the materials found in general waste bins could have been recycled or composted. This highlights the critical importance of making the right choice for every item."
-                         data-source="WRAP - Composition of municipal waste in the UK, 2017"
-                         data-link="https://www.wrap.ngo/sites/default/files/2025-06/WRAP-UK-Food-Waste-and-Food-Surplus-Key-Facts-July-2025-v5.pdf">
+                         data-title="Recycling Contamination"
+                         data-info="A Spring 2024 survey found that 82% of UK citizens admit to putting non-recyclable items in their recycling bins. This contamination can spoil entire batches of otherwise good recycling."
+                         data-source="WRAP Recycling Tracker, Spring 2024"
+                         data-link="https://wrap.ngo/resources/report/recycling-tracker-citizens-and-collections-spring-2024">
                         <div class="stat-visual">
-                            <div class="donut-chart" data-percent="80">
-                                <svg viewBox="0 0 36 36">
-                                    <path class="donut-ring" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                    <path class="donut-segment compost" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <div class="donut-chart" data-percent="82">
+                                <svg width="100" height="100" viewBox="0 0 36 36">
+                                    <circle class="donut-ring" cx="18" cy="18" r="15.9155" fill="transparent" stroke-width="3"></circle>
+                                    <circle class="donut-segment compost" cx="18" cy="18" r="15.9155" fill="transparent" stroke-width="3" stroke-dasharray="0 100" transform="rotate(-90 18 18)"></circle>
                                 </svg>
                             </div>
                         </div>
                         <div class="stat-header">
-                            <span class="stat-number compost" data-target="80">80</span>
+                            <span class="stat-number compost" data-target="82">0</span>
                             <span class="stat-unit">%</span>
                         </div>
-                        <span class="stat-label">potentially recyclable</span>
+                        <span class="stat-label">of people contaminating recycling</span>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="content-section bg-white">
+            <div class="highlight-box soil">
+                <h2 class="font-display stats-title" style="color: var(--compost-green);">Have Your Say!</h2>
+                <p class="text-xl">Take our 2-minute survey to help us design a new student-led composting project and enter a prize draw to win a £25 voucher!</p>
+                <a href="survey.html" class="cta-button page-transition-link" style="background: var(--compost-green);">Take the Survey</a>
             </div>
         </section>
 
@@ -119,7 +151,7 @@
                     <a href="project-root.html" class="cta-button page-transition-link">Join the Pilot →</a>
                 </div>
                 <div class="cta-image">
-                    <img src="https://images.unsplash.com/photo-1582485323440-7543f702b5c3?q=80&w=800&auto=format&fit=crop" alt="People working together in a community garden">
+                    <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=685" alt="People working together in a community garden">
                 </div>
             </div>
         </section>
@@ -149,11 +181,6 @@
             </div>
             <div class="footer-social">
                 <p>A student initiative at the <a href="https://www.reading.ac.uk/" target="_blank" rel="noopener noreferrer">University of Reading</a>.</p>
-                <div class="social-icons">
-                    <a href="#" class="social-icon">f</a>
-                    <a href="#" class="social-icon">i</a>
-                    <a href="#" class="social-icon">t</a>
-                </div>
             </div>
         </div>
     </footer>
